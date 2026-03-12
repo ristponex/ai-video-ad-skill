@@ -70,9 +70,11 @@ The skill chains five different AI models across three modalities:
 | Script | DeepSeek V3.2 | LLM | Write ad scripts with scenes, voiceover, and timing | $0.26/M tokens |
 | Storyboard | Seedream v5.0 Lite | Image | Generate visual storyboard frames from scene descriptions | $0.032/image |
 | Storyboard Alt | Flux Dev | Image | Budget-friendly storyboard alternative | $0.012/image |
-| Video (Premium) | Kling v3.0 Pro | Video | Highest quality video generation with native audio | $0.204/video |
-| Video (Standard) | Seedance v1.5 Pro | Video | Audio-visual synchronized video generation | $0.222/video |
-| Video (Budget) | Wan 2.6 | Video | Cost-effective video generation | $0.07/video |
+| Video (Premium) | Kling v3.0 Pro | Video | Highest quality video generation with native audio | from $0.204/s |
+| Video (Standard) | Seedance v1.5 Pro | Video | Audio-visual synchronized video generation | from $0.222/s |
+| Video (Budget) | Wan 2.6 | Video | Cost-effective video generation | from $0.07/s |
+
+*Prices shown are starting prices. Higher resolution or longer duration may cost more.*
 
 ---
 
@@ -427,7 +429,7 @@ Create a video ad on a tight budget for a local bakery
 **What the skill does:**
 1. Uses DeepSeek V3.2 for scripting (near-zero cost)
 2. Uses Flux Dev for storyboards ($0.012/image instead of $0.032)
-3. Uses Wan 2.6 for video generation ($0.07/clip instead of $0.204)
+3. Uses Wan 2.6 for video generation (from $0.07/s instead of from $0.204/s)
 
 **Budget pipeline costs:**
 
@@ -509,7 +511,7 @@ Scene 6: Logo reveal: "Fuel Your Morning. Brand Name."
 
 | Use Case | Pipeline | Cost per Ad |
 |----------|----------|------------|
-| Product showcase videos | Single-shot (Kling i2v) | $0.204 |
+| Product showcase videos | Single-shot (Kling i2v) | from $0.204/s |
 | Seasonal campaign ads | Full pipeline | ~$0.71 |
 | Flash sale announcements | Budget (Wan 2.6) | ~$0.25 |
 | Unboxing / reveal videos | Multi-shot narrative | ~$1.42 |
@@ -529,9 +531,9 @@ Scene 6: Logo reveal: "Fuel Your Morning. Brand Name."
 
 | Use Case | Pipeline | Cost per Video |
 |----------|----------|---------------|
-| Channel intro/outro | Single scene | $0.07-0.204 |
+| Channel intro/outro | Single scene | from $0.07-0.204/s |
 | Sponsored content | Full pipeline | ~$0.71 |
-| Thumbnail animations | Short clip (3-5s) | $0.07-0.204 |
+| Thumbnail animations | Short clip (3-5s) | from $0.07-0.204/s |
 | Course promo videos | Multi-shot | ~$1.42 |
 
 ---
@@ -573,7 +575,7 @@ Scene 6: Logo reveal: "Fuel Your Morning. Brand Name."
 | Property | Value |
 |----------|-------|
 | **Model ID** | `kwaivgi/kling-v3.0-pro/text-to-video` (t2v) / `kwaivgi/kling-v3.0-pro/image-to-video` (i2v) |
-| **Price** | $0.204 per video clip |
+| **Price** | from $0.204/s |
 | **Best For** | Highest quality video ads, cinematic output |
 | **Strengths** | Best motion quality, native audio, up to 4K resolution |
 | **Use When** | Premium brand content, final production videos, client deliverables |
@@ -583,7 +585,7 @@ Scene 6: Logo reveal: "Fuel Your Morning. Brand Name."
 | Property | Value |
 |----------|-------|
 | **Model ID** | `bytedance/seedance-v1.5-pro/image-to-video` |
-| **Price** | $0.222 per video clip |
+| **Price** | from $0.222/s |
 | **Best For** | Audio-synchronized video content |
 | **Strengths** | Audio-visual synchronization, dance/music content |
 | **Use When** | Music-driven ads, dance content, audio-visual experiences |
@@ -593,7 +595,7 @@ Scene 6: Logo reveal: "Fuel Your Morning. Brand Name."
 | Property | Value |
 |----------|-------|
 | **Model ID** | `wan/wan-2.6/text-to-video` (t2v) / `wan/wan-2.6/image-to-video` (i2v) |
-| **Price** | $0.07 per video clip |
+| **Price** | from $0.07/s |
 | **Best For** | Budget-friendly video generation, rapid prototyping |
 | **Strengths** | Lowest cost, fast generation, good for drafts |
 | **Use When** | Budget projects, internal reviews, testing concepts before premium generation |
@@ -1111,7 +1113,7 @@ ai-video-ad-skill/
 
 This workflow is optimized for Atlas Cloud. Move from experiment to enterprise-ready scale with our dedicated migration support.
 
-- **Production-Ready**: Generate video ads at $0.07-0.222/clip
+- **Production-Ready**: Generate video ads at from $0.07-0.222/s
 - **Enterprise Security**: SOC I & II Certified | HIPAA Compliant
 - **Zero Maintenance**: Serverless architecture — focus on your product, not the servers
 - **25% Bonus**: First recharge up to $100

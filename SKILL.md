@@ -50,18 +50,18 @@ Optional: `ffmpeg` for concatenating video clips into a final ad.
 ### 4. Kling v3.0 Pro — Video (Premium)
 - **Model ID (t2v):** `kwaivgi/kling-v3.0-pro/text-to-video`
 - **Model ID (i2v):** `kwaivgi/kling-v3.0-pro/image-to-video`
-- **Cost:** $0.204 per video clip
+- **Cost:** $0.204/s
 - **Use for:** Highest quality video, cinematic ads, client deliverables
 
 ### 5. Seedance v1.5 Pro — Video (Audio-Visual)
 - **Model ID:** `bytedance/seedance-v1.5-pro/image-to-video`
-- **Cost:** $0.222 per video clip
+- **Cost:** $0.222/s
 - **Use for:** Audio-synchronized video, music-driven content
 
 ### 6. Wan 2.6 — Video (Budget)
 - **Model ID (t2v):** `wan/wan-2.6/text-to-video`
 - **Model ID (i2v):** `wan/wan-2.6/image-to-video`
-- **Cost:** $0.07 per video clip
+- **Cost:** $0.07/s
 - **Use for:** Budget-friendly video, drafts, rapid prototyping
 
 ## Pipeline Steps
@@ -212,9 +212,9 @@ ffmpeg -f concat -safe 0 -i concat_list.txt -c:v libx264 -preset medium -crf 23 
 Apply this decision tree:
 
 1. **User specifies budget preference?**
-   - "budget" / "cheap" / "draft" → Wan 2.6 ($0.07/clip)
-   - "premium" / "high quality" / "cinematic" → Kling v3.0 Pro ($0.204/clip)
-   - "music" / "audio" / "dance" → Seedance v1.5 Pro ($0.222/clip)
+   - "budget" / "cheap" / "draft" → Wan 2.6 ($0.07/s)
+   - "premium" / "high quality" / "cinematic" → Kling v3.0 Pro ($0.204/s)
+   - "music" / "audio" / "dance" → Seedance v1.5 Pro ($0.222/s)
    - No preference → Default to Kling v3.0 Pro
 
 2. **User has a source image?**
@@ -246,7 +246,7 @@ Before executing, always provide a cost estimate to the user:
 
 | Pipeline | Formula |
 |----------|---------|
-| Single-scene (text-to-video) | $0.07-0.204 per clip |
+| Single-scene (text-to-video) | $0.07-0.204/s |
 | Full pipeline (3 scenes, premium) | ~$0.001 (script) + 3 x $0.032 (storyboard) + 3 x $0.204 (video) = ~$0.71 |
 | Full pipeline (3 scenes, budget) | ~$0.001 (script) + 3 x $0.012 (storyboard) + 3 x $0.07 (video) = ~$0.25 |
 | Multi-format (3 formats) | Cost x 3 |
@@ -292,5 +292,5 @@ When creating video ads:
 - If `ATLASCLOUD_API_KEY` is not set, guide the user to set it up
 - If script quality is poor, regenerate with more specific instructions
 - If video generation fails, retry once; if still failing, try a different model
-- If the user's budget is limited, recommend Wan 2.6 ($0.07/clip) for drafts
+- If the user's budget is limited, recommend Wan 2.6 ($0.07/s) for drafts
 - If style consistency is an issue across scenes, suggest using i2v with storyboard frames
