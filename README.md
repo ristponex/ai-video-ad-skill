@@ -2,7 +2,7 @@
 
 # AI Video Ad Skill
 
-**A Claude Code skill for end-to-end video advertisement creation using Atlas Cloud**
+**An AI Agent Skill for end-to-end video advertisement creation using Atlas Cloud**
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Stars](https://img.shields.io/github/stars/thoughtincode/ai-video-ad-skill?style=social)](https://github.com/thoughtincode/ai-video-ad-skill)
@@ -20,7 +20,7 @@ Create professional video advertisements from concept to finished ad — scriptw
 - [Pipeline Architecture](#pipeline-architecture)
 - [Prerequisites](#prerequisites)
 - [API Integration Guide](#api-integration-guide)
-- [Claude Code Integration](#claude-code-integration)
+- [Agent Skill Integration](#agent-skill-integration)
 - [Usage Examples](#usage-examples)
 - [Application Scenarios](#application-scenarios)
 - [Models Used](#models-used)
@@ -36,7 +36,7 @@ Create professional video advertisements from concept to finished ad — scriptw
 
 ## What This Skill Does
 
-AI Video Ad Skill is a Claude Code skill that transforms how businesses create video advertisements. Instead of hiring agencies, booking studios, and waiting weeks, you describe your ad concept in natural language and the skill orchestrates multiple AI models to deliver a finished video ad.
+AI Video Ad Skill is an AI agent skill that transforms how businesses create video advertisements. Instead of hiring agencies, booking studios, and waiting weeks, you describe your ad concept in natural language and the skill orchestrates multiple AI models to deliver a finished video ad.
 
 The skill handles the entire ad creation pipeline:
 
@@ -89,7 +89,7 @@ The skill chains five different AI models across three modalities:
                           │
                           ▼
     ┌─────────────────────────────────────────────────────────────────┐
-    │                    CLAUDE CODE SKILL                             │
+    │                      AGENT SKILL                                 │
     │  Analyzes brief, plans pipeline, selects models                 │
     └──────┬──────────────┬───────────────────────┬───────────────────┘
            │              │                       │
@@ -151,7 +151,7 @@ The skill chains five different AI models across three modalities:
 
 ## Prerequisites
 
-- A [Claude Code](https://claude.ai/code) installation
+- An AI coding agent (Claude Code, Cursor, OpenAI Codex, GitHub Copilot, Gemini CLI, Windsurf, OpenCode, Kiro, or any of 15+ supported platforms)
 - An [Atlas Cloud](https://www.atlascloud.ai?ref=JPM683) API key
 - `curl` or `python3` available in your terminal (for API calls)
 - Optional: `ffmpeg` for concatenating video clips into a final ad
@@ -212,9 +212,9 @@ In Claude Code, run `/init` to load the skill from `SKILL.md`.
 
 ---
 
-## Claude Code Integration
+## Agent Skill Integration
 
-This repository is a **Claude Code skill**. Once loaded, Claude Code understands video ad creation workflows and can execute them through natural language.
+This repository is an **AI agent skill** — a reusable instruction set that extends AI coding agents' capabilities. Skills work with 15+ platforms including Claude Code, Cursor, OpenAI Codex, GitHub Copilot, Gemini CLI, Windsurf, OpenCode, Kiro, and more. Once loaded, your agent understands video ad creation workflows and can execute them through natural language.
 
 ### How It Works
 
@@ -243,7 +243,7 @@ Once the skill is loaded, you can use commands like:
 "Write a script and generate a video ad for our SaaS product launch"
 ```
 
-Claude Code handles the entire pipeline — scripting, storyboarding, video generation, and format optimization — automatically.
+Your agent handles the entire pipeline — scripting, storyboarding, video generation, and format optimization — automatically.
 
 ---
 
@@ -1128,6 +1128,6 @@ This project is licensed under the MIT License — see the [LICENSE](LICENSE) fi
 
 <div align="center">
 
-**Built for the Claude Code ecosystem. Powered by [Atlas Cloud](https://www.atlascloud.ai?ref=JPM683).**
+**Built for the open agent skills ecosystem — works with Claude Code, Cursor, Codex, Copilot, Gemini CLI, Windsurf, OpenCode, Kiro, and 15+ AI coding agents. Powered by [Atlas Cloud](https://www.atlascloud.ai?ref=JPM683).**
 
 </div>
