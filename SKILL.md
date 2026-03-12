@@ -55,7 +55,7 @@ Optional: `ffmpeg` for concatenating video clips into a final ad.
 
 ### 5. Seedance v1.5 Pro — Video (Audio-Visual)
 - **Model ID:** `bytedance/seedance-v1.5-pro/image-to-video`
-- **Cost:** $0.222/s
+- **Cost:** $0.044/s
 - **Use for:** Audio-synchronized video, music-driven content
 
 ### 6. Wan 2.6 — Video (Budget)
@@ -214,7 +214,7 @@ Apply this decision tree:
 1. **User specifies budget preference?**
    - "budget" / "cheap" / "draft" → Wan 2.6 ($0.07/s)
    - "premium" / "high quality" / "cinematic" → Kling v3.0 Pro ($0.204/s)
-   - "music" / "audio" / "dance" → Seedance v1.5 Pro ($0.222/s)
+   - "music" / "audio" / "dance" → Seedance v1.5 Pro ($0.044/s)
    - No preference → Default to Kling v3.0 Pro
 
 2. **User has a source image?**

@@ -71,7 +71,7 @@ The skill chains five different AI models across three modalities:
 | Storyboard | Seedream v5.0 Lite | Image | Generate visual storyboard frames from scene descriptions | $0.032/image |
 | Storyboard Alt | Flux Dev | Image | Budget-friendly storyboard alternative | $0.012/image |
 | Video (Premium) | Kling v3.0 Pro | Video | Highest quality video generation with native audio | from $0.204/s |
-| Video (Standard) | Seedance v1.5 Pro | Video | Audio-visual synchronized video generation | from $0.222/s |
+| Video (Standard) | Seedance v1.5 Pro | Video | Audio-visual synchronized video generation | from $0.044/s |
 | Video (Budget) | Wan 2.6 | Video | Cost-effective video generation | from $0.07/s |
 
 *Prices shown are starting prices. Higher resolution or longer duration may cost more.*
@@ -585,7 +585,7 @@ Scene 6: Logo reveal: "Fuel Your Morning. Brand Name."
 | Property | Value |
 |----------|-------|
 | **Model ID** | `bytedance/seedance-v1.5-pro/image-to-video` |
-| **Price** | from $0.222/s |
+| **Price** | from $0.044/s |
 | **Best For** | Audio-synchronized video content |
 | **Strengths** | Audio-visual synchronization, dance/music content |
 | **Use When** | Music-driven ads, dance content, audio-visual experiences |
