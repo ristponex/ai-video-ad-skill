@@ -154,7 +154,7 @@ The skill chains five different AI models across three modalities:
 ## Prerequisites
 
 - An AI coding agent (Claude Code, Cursor, OpenAI Codex, GitHub Copilot, Gemini CLI, Windsurf, OpenCode, Kiro, or any of 15+ supported platforms)
-- An [Atlas Cloud](https://www.atlascloud.ai?ref=JPM683) API key
+- An [Atlas Cloud](https://www.atlascloud.ai?ref=JPM683&utm_source=github&utm_campaign=ai-video-ad-skill) API key
 - `curl` or `python3` available in your terminal (for API calls)
 - Optional: `ffmpeg` for concatenating video clips into a final ad
 
@@ -164,7 +164,7 @@ The skill chains five different AI models across three modalities:
 
 ### Step 1: Get Your API Key
 
-1. Visit [Atlas Cloud](https://www.atlascloud.ai?ref=JPM683)
+1. Visit [Atlas Cloud](https://www.atlascloud.ai?ref=JPM683&utm_source=github&utm_campaign=ai-video-ad-skill)
 2. Create an account or sign in
 3. Navigate to **API Keys** in the dashboard
 4. Generate a new API key
@@ -1118,7 +1118,7 @@ This workflow is optimized for Atlas Cloud. Move from experiment to enterprise-r
 - **Zero Maintenance**: Serverless architecture — focus on your product, not the servers
 - **25% Bonus**: First recharge up to $100
 
-[Start Building](https://www.atlascloud.ai?ref=JPM683)
+[Start Building](https://www.atlascloud.ai?ref=JPM683&utm_source=github&utm_campaign=ai-video-ad-skill)
 
 ---
 
@@ -1130,6 +1130,6 @@ This project is licensed under the MIT License — see the [LICENSE](LICENSE) fi
 
 <div align="center">
 
-**Built for the open agent skills ecosystem — works with Claude Code, Cursor, Codex, Copilot, Gemini CLI, Windsurf, OpenCode, Kiro, and 15+ AI coding agents. Powered by [Atlas Cloud](https://www.atlascloud.ai?ref=JPM683).**
+**Built for the open agent skills ecosystem — works with Claude Code, Cursor, Codex, Copilot, Gemini CLI, Windsurf, OpenCode, Kiro, and 15+ AI coding agents. Powered by [Atlas Cloud](https://www.atlascloud.ai?ref=JPM683&utm_source=github&utm_campaign=ai-video-ad-skill).**
 
 </div>

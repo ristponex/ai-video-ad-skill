@@ -26,7 +26,7 @@ Requires the `ATLASCLOUD_API_KEY` environment variable. If not set, instruct the
 export ATLASCLOUD_API_KEY=your_api_key_here
 ```
 
-Get an API key at: https://www.atlascloud.ai?ref=JPM683
+Get an API key at: https://www.atlascloud.ai?ref=JPM683&utm_source=github&utm_campaign=ai-video-ad-skill
 
 Optional: `ffmpeg` for concatenating video clips into a final ad.
 
